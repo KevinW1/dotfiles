@@ -35,18 +35,14 @@ alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
-alias ltr="ls -ltr"			    # lon list by reverse date modified
+alias llp='ls -lrt -d -1 "$PWD"/{*,.*}'     # long list with full path
+alias ltr="ls -ltr"			                # long list by reverse date modified
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 cdl() { builtin cd "$@"; ll; }              # Always list directory contents upon 'cdl'
-alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
-alias b='cd ../'                           # Go back 1 directory level
-alias b.2='cd ../../'                       # Go back 2 directory levels
-alias b.3='cd ../../../'                     # Go back 3 directory levels
-alias b.4='cd ../../../../'                  # Go back 4 directory levels
-alias b.5='cd ../../../../../'               # Go back 5 directory levels
-alias b.6='cd ../../../../../../'            # Go back 6 directory levels
+alias b='cd ../'                            # Go back 1 directory level
 alias ~="cd ~"                              # ~:            Go Home
-alias cl='clear'                             # c:            Clear terminal display
+alias cl='clear'                            # c:            Clear terminal display
+alias cll='clear; ll'                       # c:            Clear terminal display and long list
 alias which='type -all'                     # which:        Find executables
 alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
 alias show_options='shopt'                  # Show_options: display bash options settings
@@ -56,6 +52,8 @@ mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and ju
 alias source_bash='source ~/.bash_profile'  # source_bash   Quickly source the .bash_profile file
 
 alias rv="/c/Program\ Files/djv-1.1.0-Windows-64/bin/djv_view.exe"    # djv picture viewer
+alias sublime="/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"    # djv picture viewer
+alias s='sublime'
 
 #   lr:  Full Recursive Directory Listing
 #   ------------------------------------------
