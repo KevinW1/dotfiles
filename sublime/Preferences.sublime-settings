@@ -1,0 +1,20 @@
+{
+	"added_words":
+	[
+		"shaders",
+		"volumetrics",
+		"strived",
+		"Weta"
+	],
+	"always_show_minimap_viewport": true,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"font_size": 12,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"spell_check": true,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
