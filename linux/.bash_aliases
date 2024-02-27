@@ -48,6 +48,7 @@ alias lsockU='ss -u -a'                     # Display only open UDP sockets
 alias lsockT='ss -t -a'                     # Display only open TCP sockets
 alias openPorts='ss -ltn'                   # All listening connections
 alias myip='dig @resolver4.opendns.com myip.opendns.com +short' # External IPv4 address
+alias explore='xdg-open ./'                 # Open current shell location in file manager
 
 
 #   Program shortcuts
